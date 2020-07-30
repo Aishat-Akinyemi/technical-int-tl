@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel File Upload</title>
+    <script lang="javascript" src="js/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-upload" viewBox="0 0 35 32"><path d="M29.4 15.5c0 0 0.6-8.7-7.4-9.7-6.9-0.7-9 5.7-9 5.7s-2.1-2-4.9-0.4c-2.5 1.6-2.1 4.4-2.1 4.4s-5.6 1.1-5.6 6.8c0.1 5.7 6.1 5.7 6.1 5.7h9.4v-6h-3l5-5 5 5h-3v6h8.5c0 0 5.5 0 6.3-5.4 0.4-5.9-5.3-7.1-5.3-7.1z"/></symbol>
+    </defs>
+    </svg>
+    <header><h1>Upload</h1></header>
+    <main>  
+                <div id="container">    
+                    <section id="column-mapping-header" style="display: none;" >
+                        <h2>Column Mapping</h2>
+                        <button type="submit" class="btn" id="save-btn">Save</button>
+                    </section> 
+
+                <div id="file-upload" class="wrapper" >
+                    <svg class="icon-upload"><use xlink:href="#icon-upload"></use></svg>
+                    <p>Drag and drop a file here</p>
+                    <p>or</p>
+                    <input type="file" id="file" name="file" accept=".xlsx"/>
+                    <label for="file">CHOOSE FILE</label> <span id="file-selected"></span>             
+                </div>
+
+                <div id="column-mapping" class="wrapper" style="display: none;" >                    
+                   
+                </div>
+            
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
