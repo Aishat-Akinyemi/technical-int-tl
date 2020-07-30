@@ -66,6 +66,7 @@ function handleFile(file) {
         }
         else {
             alert("wrong heading");
+            location.reload();
         }
 
     };
